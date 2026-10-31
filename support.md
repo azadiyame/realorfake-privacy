@@ -13,6 +13,19 @@ Need help? Email **[support@adooba.com](mailto:support@adooba.com)** and we'll g
 2. The App reads the file's hidden metadata on your device: camera make and model, lens and exposure, GPS location, capture and edit dates, software names, XMP edit history, Content Credentials (C2PA), IPTC AI labels, PNG generation parameters, PDF properties and revision history, Office document authorship and more.
 3. You get a verdict — **Looks authentic**, **Edited**, **Probably AI-generated**, **AI-generated** or **Inconclusive** — with a confidence percentage and the list of clues behind it.
 
+## Sample files for testing
+
+Download these files to try the analysis (save them to Files on your iPhone, then choose **Browse Files** in the app, or add the images to Photos):
+
+- [All samples (zip)](realorfake-samples.zip)
+- [camera-photo-iphone.jpg](samples/camera-photo-iphone.jpg) — real capture with camera, lens, GPS and date metadata → "Looks authentic"
+- [ai-stable-diffusion.png](samples/ai-stable-diffusion.png) — PNG with an embedded Stable Diffusion prompt → "AI-generated"
+- [ai-labelled-iptc.jpg](samples/ai-labelled-iptc.jpg) — JPEG carrying the IPTC "trained algorithmic media" label → "AI-generated"
+- [photoshop-edited.jpg](samples/photoshop-edited.jpg) — camera photo re-saved by Photoshop with XMP history → "Edited"
+- [invoice-original.pdf](samples/invoice-original.pdf) — PDF unchanged since creation → "Looks authentic"
+- [invoice-edited.pdf](samples/invoice-edited.pdf) — PDF modified with an online tool and an added text box → "Edited"
+- [contract.docx](samples/contract.docx) — Word file with a different last editor and tracked changes → "Edited"
+
 ## Frequently asked questions
 
 **Why is the result "Inconclusive"?**
